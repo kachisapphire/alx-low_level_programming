@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *0-reset_to_98.c - entry point
+ *0-reset_to_98 - entry point
  *@n: the integer to be set
  *Return: void
  */
