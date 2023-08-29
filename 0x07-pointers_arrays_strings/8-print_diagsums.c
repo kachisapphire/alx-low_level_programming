@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  *print_diagsums - entry point
  *@a: array
@@ -8,15 +7,11 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i;
-	int j;
-
-	sum 1 = 0;
-	sum 2 = 0;
+	int i, j, sum1 = 0, sum2 = 0;
 
 	for (i = 0; i <= (size * size); i = i + size + 1)
-		sum 1 = sum 1 + a[i];
+		sum1 = sum1 + a[i];
 	for (j = size - 1; j <= (size * size) - size; j = j + size - 1)
-		sum 2 = sum 2 + a[j];
-	printf("%d, %d\n", sum 1, sum 2);
+		sum2 = sum2 + a[j];
+	printf("%d, %d\n", sum1, sum2);
 }
