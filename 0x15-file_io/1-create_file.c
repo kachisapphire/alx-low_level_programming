@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *creat_file - main function
- *@filename: name of file
- *@text_content: string to create
+ *create_file - main function
+ *@filename: name of fie to create
+ *@text_content: string to print
  *Return: 1 or -1
  */
 int create_file(const char *filename, char *text_content)
@@ -13,7 +13,7 @@ int create_file(const char *filename, char *text_content)
 
 	if (!filename)
 		return (-1);
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 600);
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (fd == -1)
 		return (-1);
 	if (text_content == NULL)
@@ -23,6 +23,6 @@ int create_file(const char *filename, char *text_content)
 	i = write(fd, text_content, letters);
 	if (i == -1)
 		return (-1);
-	close (fd);
+	close(fd);
 	return (1);
 }
