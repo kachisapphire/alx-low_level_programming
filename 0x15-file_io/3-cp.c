@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 		nochars = read(file_from, buffer, 1024);
 		if (nochars == -1)
 			error(-1, 0, argv);
-		nowr = write(file_to, buffer, 1024);
+		nowr = write(file_to, buffer, nochars);
 		if (nowr == -1)
 			error(0, -1, argv);
 	}
