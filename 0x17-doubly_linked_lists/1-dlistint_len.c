@@ -1,7 +1,7 @@
 #include "lists.h"
 /**
  *dlistint_len - function to execute
- *@h: pointer 
+ *@h: pointer
  *Return: nodes
  */
 size_t dlistint_len(const dlistint_t *h)
